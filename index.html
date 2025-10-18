@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Prince Erl Benavidez Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Home">
+                <picture>
+                    <img src="images/prglog.png" alt="PRZ logo" width="48" height="48" loading="eager" decoding="async">
+                </picture>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                    <i id="themeIcon" class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+
+                <div class="hamburger" id="hamburger" aria-hidden="true" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1 id="heroTitle" aria-live="polite" aria-atomic="true">
+            <span id="typingText" class="typing" aria-hidden="false"></span>
+            <noscript>Welcome To My Portfolio</noscript>
+        </h1>
+        <p id="heroRole" class="hero-role">Junior | Web Developer | Front-End | Back-End</p>
+        <a href="#" class="btn mailto-btn" data-email="geezpri@gmail.com" aria-label="Compose email to get started">Connect With Me</a>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+
+            <div class="profile-img" aria-hidden="false">
+                <div class="profile-inner" id="profileInner">
+                    <img src="images/Me.png"
+                         srcset="images/Me.jpg 300w, images/Me.png 600w, images/Me.png 900w"
+                         sizes="(max-width: 768px) 180px, 300px"
+                         alt="Photo of Prince Erl Benavidez, junior web developer"
+                         width="300" height="300" loading="lazy" decoding="async">
+                    <div class="profile-shine" aria-hidden="true"></div>
+                </div>
+            </div>
+
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am Prince Erl Benavidez a passionate junior web developer with a keen eye for design and a love for creating beautiful, functional websites. With years of experience in front-end and back-end development, I bring ideas to life through code.</p>
+                <p>I specialize in building responsive, user-friendly websites that not only look great but also provide an exceptional user experience. My goal is to help businesses and individuals establish their online presence effectively.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, reading tech blogs, or enjoying a good cup of coffee.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-title">My Tech Stacks</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fab fa-html5" aria-hidden="true"></i>
+                <h3>FRONT-END</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+                <p>BOOTSTRAP</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <h3>BACK-END</h3>
+                <p>PYTHON</p>
+                <p>PHP</p>
+                <p>NODE JS</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database" aria-hidden="true"></i>
+                <h3>DATABASE</h3>
+                <p>MySQL</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-grid">
+            <a
+                class="project-card"
+                href="https://example.com/ecommerce"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open E-Commerce Website in a new tab"
+            >
+                <div class="project-img" role="img" aria-label="E-commerce project preview">
+                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Website</h3>
+                    <p>A fully functional online store with shopping cart, payment integration, and user authentication.</p>
+                </div>
+            </a>
+
+            <a
+                class="project-card"
+                href="https://example.com/blog-platform"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Blog Platform in a new tab"
+            >
+                <div class="project-img" role="img" aria-label="Blog platform preview">
+                    <i class="fas fa-blog" aria-hidden="true"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Blog Platform</h3>
+                    <p>A modern blogging platform with rich text editor, comments system, and social sharing features.</p>
+                </div>
+            </a>
+
+            <a
+                class="project-card"
+                href="https://example.com/analytics-dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Analytics Dashboard in a new tab">
+                <div class="project-img" role="img" aria-label="Analytics dashboard preview">
+                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Analytics Dashboard</h3>
+                    <p>An interactive dashboard for data visualization with real-time updates and detailed analytics.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="cta" id="contact">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Let's work together to bring your ideas to life!</p>
+        <a href="#" class="btn mailto-btn" data-email="your.email@example.com" aria-label="Compose email to start project">Connect With Me</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>Passionate junior web developer creating amazing digital experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#home" style="color: white; text-decoration: underline;">Home</a></p>
+                <p><a href="#about" style="color: white; text-decoration: underline;">About</a></p>
+                <p><a href="#projects" style="color: white; text-decoration: underline;">Projects</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Prigeez" target="_blank" title="Facebook" rel="noopener">
+                        <i class="fab fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/Prigeez" target="_blank" title="Github" rel="noopener">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="geezpri@gmail.com" target="_blank" title="geezpri@gmail.com" rel="noopener">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Prince Erl Benavidez | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    
+    <div id="emailModalBackdrop" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="emailModalTitle">
+        <div class="modal" role="document">
+            <h3 id="emailModalTitle">Compose an Email</h3>
+            <p class="lead">Fill in your details and send it.</p>
+
+            <form id="emailComposeForm" novalidate>
+                <div class="grid">
+                    <div>
+                        <label for="composerName">Your name</label>
+                        <input id="composerName" name="name" type="text" placeholder="Prince" autocomplete="name">
+                        <div id="nameError" class="field-error" aria-live="polite" hidden></div>
+                    </div>
+
+                    <div>
+                        <label for="composerEmail">Your email</label>
+                        <input id="composerEmail" name="email" type="email" placeholder="you@example.com" autocomplete="email">
+                        <div id="emailError" class="field-error" aria-live="polite" hidden></div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom:0.75rem;">
+                    <label for="composerSubject">Subject</label>
+                    <input id="composerSubject" name="subject" type="text" placeholder="Project inquiry / Collaboration" value="Project inquiry / Collaboration">
+                </div>
+
+                <div>
+                    <label for="composerMessage">Message</label>
+                    <textarea id="composerMessage" name="message" placeholder="Hi Prince — I'd love to work with you on..." aria-label="Message body">Hi Prince — I'd love to work with you on...</textarea>
+                </div>
+
+                <div class="actions" style="margin-top:1rem;">
+                    <button type="button" id="closeEmailModal" class="btn-ghost">Close</button>
+                    <button type="submit" id="sendEmailBtn" class="btn-primary">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
